@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Project</title>
+  <style>
+    #container{
+      height: 200px;
+      width: 400px;
+      border: 2px solid black;
+      display: flex;
+      flex-direction: column-reverse;
+
+    }
+    #container1{
+      height: 200px;
+      width: 400px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: space-evenly;
+
+    }
+    #container2{
+      height: 200px;
+      width: 400px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+    }
+    #container3{
+      height: 200px;
+      width: 400px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+    }
+    #container4{
+      height: 600px;
+      width: 800px;
+      border: 2px solid black;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      align-content:center;
+
+    }
+    
+    #container5{
+      height: 600px;
+      width: 800px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: center;
+
+    }
+    #container6{
+      height: 200px;
+      width: 400px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: space-between;
+
+
+    }
+    #container7{
+      height: 200px;
+      width: 600px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: space-between;
+
+
+    }
+    #container8{
+      height: 200px;
+      width: 500px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: space-between;
+
+
+    }
+    .box{
+      height: 90px;
+      width: 90px;
+      border: 2px solid black;
+    }
+    .boxes{
+      height: 90px;
+      width: 90px;
+      border: 2px solid black;
+    }
+    #box1{background-color: aqua;}
+    #box2{background-color: rgb(95, 23, 209);}
+    #box3{background-color: rgb(206, 93, 17);}
+    #box4{background-color: rgb(221, 14, 152);}
+    #box5{background-color: yellowgreen;}
+    #box6{background-color: aqua;}
+    #box7{background-color: rgb(95, 23, 209);}
+    #box8{background-color: rgb(206, 93, 17);flex-shrink: 5;}
+    #box9{background-color: rgb(221, 14, 152);flex-grow: 0.5;}
+    #box10{background-color: yellowgreen;}
+    #boxx1{background-color: aqua;order: 4;}
+    #boxx2{background-color: rgb(95, 23, 209);order: 5;}
+    #boxx3{background-color: rgb(206, 93, 17);order: 1;}
+    #boxx4{background-color: rgb(221, 14, 152);order: 2;}
+    #boxx5{background-color: yellowgreen;order: 3;}
+
+  </style>
+
+</head>
+<body>
+  <h1>Flex direction (row,row-reverse,col, col-revese)</h1>
+  <div id="container">
+    <div id="box1" class="box">Box1</div>
+    <div id="box2" class="box">Box2</div>
+    <div id="box3" class="box">Box3</div>
+    <div id="box4" class="box">Box4</div>
+  </div>
+  <h1>Flex justify content(flex-start,flex-end,center,spacebetween,space around, space-evenly)</h1>
+  <div id="container1">
+    <div id="box1" class="box">Box1</div>
+    <div id="box2" class="box">Box2</div>
+    <div id="box3" class="box">Box3</div>
+    <div id="box4" class="box">Box4</div>
+  </div>
+  <h1>flex wrap (no wrap,wrap,wrap reverse size will be unchanged)</h1>
+  <div id="container2">
+    <div id="box1" class="box">Box1</div>
+    <div id="box2" class="box">Box2</div>
+    <div id="box3" class="box">Box3</div>
+    <div id="box4" class="box">Box4</div>
+    <div id="box5" class="box">Box5</div>
+  </div>
+  <h1>Align items (center,end, start)</h1>
+  <div id="container3">
+    <div id="box1" class="box">Box1</div>
+    <div id="box2" class="box">Box2</div>
+    <div id="box3" class="box">Box3</div>
+    <div id="box4" class="box">Box4</div>
+  </div>
+  <h1>Align content(center,start,end)</h1>
+  <div id="container4">
+    <div id="box1" class="box">Box1</div>
+    <div id="box2" class="box">Box2</div>
+    <div id="box3" class="box">Box3</div>
+    <div id="box4" class="box">Box4</div>
+    <div id="box5" class="box">Box5</div>
+    <div id="box5" class="box">Box6</div>
+    <div id="box5" class="box">Box7</div>
+    <div id="box5" class="box">Box7</div>
+    <div id="box5" class="box">Box7</div>
+  </div>
+  <h1>Flex align self(center)</h1>
+  <div id="container5">
+    <div id="box1" class="box">Box1</div>
+    <div id="box2" class="box">Box2</div>
+    <div id="box3" class="box">Box3</div>
+    <div id="box4" class="box">Box4</div>
+    <div id="box4" class="box">Box4</div>
+    <div id="box5" class="box">Box5</div>
+    <div id="box5" class="box">Box6</div>
+    <div id="box5" class="box">Box7</div>
+    <div id="box5" class="box">Box7</div>
+    
+  </div>
+  <h1>flex shrink = 1,2,3</h1>
+  <div id="container6">
+    <div id="box6" class="box">Box1</div>
+    <div id="box7" class="box">Box2</div>
+    <div id="box8" class="box">Box3</div>
+    <div id="box9" class="box">Box4</div>
+    <div id="box10" class="box">Box5</div>
+  </div>
+  <h1>Flex grow=-1,0,1</h1>
+  <div id="container7">
+    <div id="box6" class="box">Box1</div>
+    <div id="box7" class="box">Box2</div>
+    <div id="box8" class="box">Box3</div>
+    <div id="box9" class="box">Box4</div>
+    <div id="box10" class="box">Box4</div>
+  </div>
+  <h1>Flex item order</h1>
+  <div id="container8">
+    <div id="boxx1" class="box">Box1</div>
+    <div id="boxx2" class="box">Box2</div>
+    <div id="boxx3" class="box">Box3</div>
+    <div id="boxx4" class="box">Box4</div>
+    <div id="boxx5" class="box">Box5</div>
+  </div>
+
+  
+</body>
+</html>
